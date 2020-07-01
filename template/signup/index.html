@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChaudharyRestaurant</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="myInput.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+
+
+
+</head>
+<body>
+  <div class="navbar">
+    <img src="img/logo.png" class="logo">
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Cart
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Cart 1</a>
+        <a href="#">Cart 2</a>
+        <a href="#">Cart 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">My Account
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Name 1</a>
+        <a href="#">Addressk 2</a>
+        <a href="#">Phone 3</a>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Pages
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+        <a href="#">Page 3</a>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Restaurants
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <a href="#offers">Offers</a>
+
+    <a href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+
+    <!-- </div> extra div-->
+  </div>
+
+  <!-- </div> extra div  -->
+
+
+
+  <div class ="main-section row">
+  <div id="left-box" class="col-md-8">
+    <h1> <span> Find Awesome Deals</span> in America<br>
+      List of top restaurants, cafe, pubs, and bars in Houston, based on trends
+    </h1>
+
+    <div class="dropdownsearch">
+      <button onclick="myFunction()" class="drop_searchbtn"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Quick Search </button>
+      <div id="myQuicksearch" class="dropdown_searchcontent">
+
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+
+
+        <a href="#breakfast">Breakfast</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#dinner">Dinner</a>
+        <a href="#dellivery">Delivery</a>
+        <a href="#reservation">Reservation</a>
+
+      </div>
+    </div>
+
+    <div class ="searchbar">
+      <form>
+        <input type="text" name =""placeholder ="Enter delivery location">
+        <input type ="submit" name =""value ="search">
+      </form>
+    </div>
+
+    <div id="outerbox">
+     <div id ="sliderbox">
+       <img src ="img/m1.jpg"/>
+       <img src ="img/m2.jpg"/>
+       <img src ="img/m3.jpg"/>
+       <img src ="img/m4.jpg"/>
+       <img src ="img/m5.jpg"/>
+       <img src ="img/m3.jpg"/>
+       <img src ="img/m4.jpg"/>
+       <img src ="img/m5.jpg"/>
+       <img src ="img/m1.jpg"/>
+       <img src ="img/m1.jpg"/>
+     </div>
+   </div>
+ </div>
+
+
+ <div id="Rightsliderbox" class="col-md-4 slider">
+
+
+ <!--bootstrap carousel-->
+    <img src ="img/d1.jpg"/>
+    <img src ="img/d2.jpg"/>
+    <img src ="img/d3.jpg"/>
+</div>
+</div>
+
+
+<div class = "advertisement_section">
+ <div class="container">
+   <div class="row">
+    <div class="col-md-4">
+     <div class="image_wrapper">
+       <img src="img/first.jpg">
+       <div class="image_wrapper-text">
+         <h1>Up to 50% off </h1>
+         <p>OFFERS TO BRIGHTEN YOUR DAY</p>
+       </div>
+     </div>
+   </div>
+   <div class="col-md-4">
+    <div class="image_wrapper">
+      <img src="img/second.jpg">
+      <div class="image_wrapper-text">
+        <h1>YOUR FAVORITE FOOD  </h1>
+        <p>FROM ALL NEW RESTAURANTS</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="image_wrapper">
+      <img src="img/third.jpg">
+      <div class="image_wrapper-text">
+        <h1>TOP PICKS! </h1>
+        <p>HIGHEST RATED EATERIES NEAR YOU</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popular_brands"></div>
+<div class="polular_brand">
+  <div class ="popular_text">
+  <h1> POPULAR BRANDS <br></h1>
+  <p>Top Restaurants, Cafe, Pubs,and Bars in Houston based on trends.<br> <i class="fa fa-minus" aria-hidden="true"></i> </p>
+</div>
+
+<div class ="popular_container">
+<div class="container">
+  <div class="row">
+   <div class="col-md-4">
+    <div class="image_wrapper1">
+      <img src="img/d1.jpg">
+      <div class="top-left">Promoted</div>
+      <div class="top-right"><i class="fa fa-gratipay" aria-hidden="true"></i></div>
+
+      <div class="image_wrapper-text1">
+        <h1>World Famous </h1>
+        <p>Houston--Texas--* Pure veg</p>
+        <p><i class="fa fa-clock-o" aria-hidden="true">  25-30 min Delivery</i> </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="image_wrapper1">
+      <img src="img/d2.jpg">
+      <div class="top-left">Promoted</div>
+      <div class="top-right"><i class="fa fa-gratipay" aria-hidden="true"></i></div>
+
+      <div class="image_wrapper-text1">
+        <h1> Signature Dish </h1>
+        <p>Houston's Famous Steak </p>
+        <p>  <i class="fa fa-star-o" aria-hidden="true"></i> Chef's Special </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="image_wrapper1">
+      <img src="img/d3.jpg">
+      <div class="top-left">Special</div>
+      <div class="top-right"><i class="fa fa-gratipay" aria-hidden="true"></i></div>
+
+      <div class="image_wrapper-text1">
+        <h1>House Special </h1>
+        <p>Kids under 8 eat free </p>
+        <p><i class="fa fa-clock-o" aria-hidden="true"> Take-out discounts</i> </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="membership">
+  <div class ="member_text">
+  <h1> BECOME A MEMBER <br></h1>
+  <p>Top Restaurants, Cafe, Pubs,and Bars in Houston based on trends.<br> <i class="fa fa-minus" aria-hidden="true"></i> </p>
+   <a href="#" class="btn_dark"> Create an Account <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+</div>
+</div>
+
+<hr style ="width:100%; position: relative;top: -70px;" >
+
+
+
+  <div class="subtext">
+  <h1> Operate Food Stores or Restauranta? <span class="redtext">Work With Us</span> </h1>
+</div>
+
+
+
+<div class ="subscribe_section"></div>
+  <div class="container-flui">
+    <div class="row">
+    <div class= "col-md-12">
+
+
+       <h2> SUBSCRIE TO OUR NEWS LETTER</h2>
+
+           <div class ="subscribe">
+              <form>
+                <input type="text1" name =""placeholder ="Please enter your email">
+                <input type ="submit1" name =""value ="Subscribe">
+               </form>
+
+                </div>
+                <div class="subtext1">
+                  <p> <span class="bluetext">Register now</span> to get updates on  <span class="redtext">Offers and Cupons</span> </p>
+                  <h3> follow us on </h3>
+                 </div>
+
+
+
+              <div class="centerdiv">
+              <b href="#">
+                      <i class="fa fa-3x  fa-facebook-official" aria-hidden="true"></i>
+                       </b>
+
+                  <b href="#">
+                <i class="fa fa-3x fa-twitter-square" aria-hidden="true"></i>
+                   </b>
+
+
+              <b href="#">
+                   <i class="fa  fa-3x fa-instagram" aria-hidden="true"></i>
+
+                   </b>
+                 </div>
+
+
+             </div>
+            </div>
+
+            <div class="col-md-2">
+              <ul>
+                <h3 style="font-weight: bold;color:red">ABOUT OE</h3>
+                <h3 class="text-muted"> About Us</h3>
+                <h3 class="text-muted"> Culture</h3>
+                <h3 class="text-muted"> Blog</h3>
+                <h3 class="text-muted"> Careers</h3>
+                <h3 class="text-muted"> Contact</h3>
+
+
+              </ul>>
+              </div>
+
+              <div class="col-md-2">
+                <ul>
+                  <h3 style="font-weight: bold;color:red">FOR FOODIES</h3>
+                  <h3 class="text-muted"> Community</h3>
+                  <h3 class="text-muted"> Developers</h3>
+                  <h3 class="text-muted"> Bloggers Help</h3>
+                  <h3 class="text-muted"> Verified Users</h3>
+                  <h3 class="text-muted"> Code of conduct</h3>
+
+
+                </ul>>
+                </div>
+
+                <div class="col-md-2">
+                  <ul>
+                    <h3 style="font-weight: bold;color:red">FOR RESTAURANTS</h3>
+                    <h3 class="text-muted"> Advertisement</h3>
+                    <h3 class="text-muted"> Add a Restaurant</h3>
+                    <h3 class="text-muted"> Claim your listing</h3>
+                    <h3 class="text-muted"> For Businesses</h3>
+                    <h3 class="text-muted"> Owner Guidelines</h3>
+
+
+                  </ul>>
+                  </div>
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+<script type="text/javascript">
+
+   $('.slider').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+ });
+</script>
+</html>
